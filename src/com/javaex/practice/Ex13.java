@@ -18,7 +18,15 @@ public class Ex13 {
 		for (int i = 1; i <= num; i++) {
 			// sum += i; //sum에 i를 더합니다.
 			sum = sum + i;
+			System.out.print(i);
+			// 마지막에만 +가 없게 어떻게 만들지?
+			// 입력한 숫자만 +가 없으면 되니까 num이랑 같지 않은 숫자만 이라는 조건식 
+			if (num != i) {
+				System.out.print("+");
+			}
+
 		}
+		System.out.println("");
 		System.out.println("합계 : " + sum);
 		sc.close();
 	}
