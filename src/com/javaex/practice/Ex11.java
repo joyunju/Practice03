@@ -15,11 +15,19 @@ public class Ex11 {
 		System.out.println("숫자를 입력하세요");
 
 		int num = sc.nextInt(); // 짝수 값 입력 받기
-		
-		
-		
-		
-		
+		// 합계 변수
+		int sum = 0;
+
+		for (int i = 1; i <= num; i++) {
+			if (num % 2 == 0) { // 짝수
+				sum = sum + num;
+			} else {
+				sum = sum + num;
+			}
+		}
+
+		System.out.print("결과값: " + sum);
+
 		sc.close();
 	}
 }
